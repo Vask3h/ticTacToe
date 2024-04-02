@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <title>TicTacToe</title>
 </head>
 <body>
-    
+    <div class="idke">
+       <div class="form">
+            <div class="inputs">
+            <input type="text" class="playerName" id="p1Name" name="p1Name" placeholder="Player 1" maxlength="20">
+            <input type="text" class="playerName" id="p2Name" name="p2Name" placeholder="Player 2" maxlength="20">
+            </div>
+            <button onclick="saveNames()"  id="submit" >
+            Submit 
+            </button>
+
+       </div>
+        <div class="outContainer">
+            <div class="screen" >
+                <p id="result">Tic Tac Toe</p>
+            </div>
+            <div class="gameContainer">               
+                    <button onclick="board('pos1')" id="pos1">  </button>
+                    <button onclick="board('pos2')" id="pos2">  </button>
+                    <button onclick="board('pos3')" id="pos3">  </button>
+                    <button onclick="board('pos4')" id="pos4">  </button>
+                    <button onclick="board('pos5')" id="pos5">  </button>
+                    <button onclick="board('pos6')" id="pos6">  </button>
+                    <button onclick="board('pos7')" id="pos7">  </button>
+                    <button onclick="board('pos8')" id="pos8">  </button>
+                    <button onclick="board('pos9')" id="pos9">  </button>
+            </div>
+            <div class="extraButtons">
+                <button onclick="restart()" >
+                    Restart 
+                </button>
+
+                <button>
+                    Screenshot 
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

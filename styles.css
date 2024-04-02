@@ -1,3 +1,94 @@
 body{
-    background-color: salmon;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;   
+    overflow: hidden;
+    background-color: mediumturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large    ;
+}
+p{
+    margin: 0px;
+}
+.idke{
+    border: solid 2px pink;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid blue 2px  ;
+    border-radius:  10px;
+    align-items: center;
+
+}
+.form button{
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 100px;
+}
+::placeholder{
+    color: black;
+}
+.playerName{
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 10px;
+
+}
+
+.outContainer{
+    border: solid 5px black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.screen{
+        border: 2px solid green ;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gameContainer{
+    border: solid 5px red;
+    border-radius: 20px;
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.gameContainer button{
+    padding: 6px;
+    height: 100px;
+    width: 100px;
+    border: black solid 5px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: red;
+}
+.outContainer button{
+    border: black solid 5px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.extraButtons{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.extraButtons button{
+    width: 100px;
 }
