@@ -4,9 +4,9 @@ body{
     width: 100vw;
     background-attachment: fixed;  
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size:cover; 
     overflow: hidden;
-    background-image:url(./imgs/lit-wooden-background.webp);
+    background-image:url(./imgs/background.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,26 +15,30 @@ body{
 }
 p{
     margin: 0px;
+    font-size: 25px;
 }
-.idke{
-    border: solid 2px pink;
-    border-radius:20px;
- 2}
+
 .form{
+    background-color: #2879df;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: solid blue 2px  ;
-    border-radius:  10px;
+    justify-content: space-evenly;
+    border: solid black 8px  ;
+    border-radius:  20px 20px 0px 0px;
     align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
 
 }
 .form button{
     text-align: center;
     background-color: transparent;
-    border: 1px solid yellow;
+    border: 5px solid #0b41ca;
     border-radius: 10px;
     width: 100px;
+    background-color: #d4e5fa;
+        font-size: 15px;
+
 }
 ::placeholder{
     color: black;
@@ -42,31 +46,35 @@ p{
 .playerName{
     text-align: center;
     background-color: transparent;
-    border: 1px solid yellow;
+    border: 5px solid #0b41ca;
     border-radius: 10px;
 
 }
 
 .outContainer{
-    border: solid 5px black;
-    border-radius: 20px;
+    background-color: #2879df;
+    border: solid 8px black;
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
     padding: 10px;
 }
 .screen{
-        border: 2px solid green ;
+    display: flex;
+    justify-content: center;
+    border: #0b41ca solid 5px;
+    border-radius: 20px;
+    background-color: #d4e5fa;
     margin: 0;
-    width: 100%;
     text-align: center;
     overflow: hidden;
 }
 
 .gameContainer{
-    border: solid 5px red;
     border-radius: 20px;
-
-    padding: 10px;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
     gap: 10px;
 }
 
@@ -78,20 +86,47 @@ p{
     border: black solid 5px;
     background-color: transparent;
     border-radius: 20px;
-}
-button:hover{
-    background-color: red;
+    text-align: center;
+    font-size:60px;
+    color: black;
 }
 .outContainer button{
-    border: black solid 5px;
-    background-color: transparent;
+    border: #0b41ca solid 5px;
+    background-color: #d4e5fa;
     border-radius: 20px;
+    font-size: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0px 2px 8px 2px rgba(0,0,0,0.19);
+}
+button:hover{
+ opacity: 80%;
 }
 .extraButtons{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    border: #0b41ca solid 5px;
+    border-radius: 15px;
+    background-color: #1f9219;
+
+ 
 }
 .extraButtons button{
     width: 100px;
+    background-color: #1f9219;
+    color: white;
+    font-size: 16px;
 }
+img{
+ width: 30px;
+ padding: 2px;
+}
+.inputs input{
+    max-width: 150px;
+    background-color: #d4e5fa;
+}
+
