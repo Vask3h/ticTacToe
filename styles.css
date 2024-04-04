@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large    ;
+    font-size: xx-large;
 }
 p{
     margin: 0px;
@@ -108,17 +108,9 @@ button:hover{
     justify-content: space-between;
     align-content: center;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    border: #0b41ca solid 5px;
-    border-radius: 15px;
-    background-color: #1f9219;
 
- 
-}
 .extraButtons button{
-    width: 100px;
+    width: 90px;
     background-color: #1f9219;
     color: white;
     font-size: 16px;
