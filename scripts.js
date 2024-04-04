@@ -1,8 +1,8 @@
-let player1Name = "";
-let player2Name = "";
+let player1Name = "player1";
+let player2Name = "player2";
 let turn = true;
 let screenInfo = "Tic Tac Toe";
-let winner = "N";
+let winner = "";
 let p1Wins = 0;
 let p2Wins = 0;
 let randomM = 0;
@@ -23,7 +23,7 @@ randomM = 1;
 }
 function board(pos){
     randomM = 1;
-    if(winner != ""){
+    if(winner == ""){
         if(document.getElementById(pos).innerHTML === "" ){
             if(turn === true){
                 document.getElementById(pos).innerHTML = "x";
@@ -130,7 +130,7 @@ function restart(pos){
 
     document.getElementById('screenInfo').innerHTML = "Tic Tac Toe"
     turn = true;
-    winner = "N";
+    winner = "";
     randomM = 0;
     for(let i=1; i<10; i++){
         document.getElementById(pos + i).innerHTML = "";
