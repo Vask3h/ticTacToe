@@ -9,7 +9,7 @@ body{
     overflow: hidden;
     background-image:url(./imgs/background.jpg);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large    ;
@@ -144,11 +144,23 @@ img{
 .names{
     padding: 5px;
     border-right: black solid 5px;
+    display: flex;
+    flex-direction: column;
 }
 .wins{
+    display: flex;
+    flex-direction: column;
     padding: 5px;
+    text-align: center;
 }
 h4{
     margin: 0;
     border-bottom: black 5px solid;
+}
+.borderDiv{
+    border-bottom: black 5px solid;
+
+}
+.wins p{
+    font-size: 32px;
 }
