@@ -20,12 +20,13 @@ p{
 }
 
 .form{
+    padding-top: 10px;
     background-color: #2879df;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: solid black 8px  ;
-    border-radius:  20px 20px 0px 0px;
+    border-radius:  20px 20px 0 0 ;
     align-items: center;
     gap: 5px;
     padding-bottom: 5px;
@@ -38,7 +39,7 @@ p{
     border-radius: 10px;
     width: 100px;
     background-color: #d4e5fa;
-        font-size: 15px;
+    font-size: 15px;
 
 }
 ::placeholder{
@@ -55,8 +56,8 @@ p{
 .outContainer{
     background-color: #2879df;
     border: solid 8px black;
+    border-radius: 0 0 20px 20px;
     border-top: 0px;
-    border-radius: 0px 0px 20px 20px;
     padding: 10px;
 }
 .screen{
@@ -126,8 +127,28 @@ img{
  width: 30px;
  padding: 2px;
 }
+.inputs{
+    display: flex;
+}
 .inputs input{
-    max-width: 150px;
     background-color: #d4e5fa;
 }
-
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    padding:;
+    background-color: #2879df;
+    border: solid 8px black;
+    border-radius:  20px;
+}
+.names{
+    padding: 5px;
+    border-right: black solid 5px;
+}
+.wins{
+    padding: 5px;
+}
+h4{
+    margin: 0;
+    border-bottom: black 5px solid;
+}
